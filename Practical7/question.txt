@@ -1,0 +1,6 @@
+Question:How have new cases and total cases developed over time in Spain?
+
+The question part starts form line 70 in covid.py.
+
+Discussion:
+I seperately showed the two plot, which is new cases and total cases, because they are not in the same scale. In the first stage, low number of people were infected. However, when the outbreak happened, the new cases increased exponentially, leading the exponential increase in total cases. In the third stage, the capacity of the hospitals was enlarged and people tended to accept self-isolation at home. These measures caused the gradual decrease in new cases, resulting in the slower increase of total cases.
