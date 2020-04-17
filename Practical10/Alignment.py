@@ -4,7 +4,6 @@ Created on Wed Apr 15 10:18:44 2020
 
 @author: bluem
 """
-#please run the programme with the existence of BLOSUM62 matrix.csv in your folder
 
 #import necessary module re
 import re
@@ -23,7 +22,7 @@ edit_distance=0 #set initial distance as zero
 for i in range(len(seq1)): #compare each amino acid
     if seq1[i]!=seq2[i]:
         edit_distance+=1 #add a score 1 if amino acids are different
-print('\nthe hammning distance of two sequence is {}\n'.format(edit_distance))
+print('\nthe hamming distance of two sequence is {}\n'.format(edit_distance))
 
 """
 blosum62 source:
