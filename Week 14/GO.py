@@ -13,6 +13,20 @@ id_list=[]
 name_list=[]
 definition_string_list=[]
 childnode_list=[]
+def find(gene):
+    find_list=[]
+    global counter
+    for term2 in terms:
+        t2_is_a_list=term2.getElementsByTagName("is_a")
+        if t2_is_a_list!=[]:#
+            for t2 in t2_is_a_list:
+                if t2.childNodes[0].data==gene:
+                    find_list.append(term2.getElementsByTagName('id')[0].childNodes[0].data)
+                    counter+=1
+    if find_list!=[]:
+        for id_element in find_list:
+            find(id_element)
+    return
 for term in terms:
     go_id=term.getElementsByTagName('id')[0]
     name=term.getElementsByTagName('name')[0]
@@ -23,10 +37,8 @@ for term in terms:
         name_list.append(name.childNodes[0].data)
         definition_string_list.append(defstr.childNodes[0].data)
         counter=0
-        for childnode in term.childNodes:
-            if "is_a" in str(childnode):
-                counter+=1
-        childnode_list.append(str(counter))
+        find(go_id.childNodes[0].data)
+        childnode_list.append(counter)
 sum_dict={"id":id_list,"name":name_list,"definition string":definition_string_list,"childnodes":childnode_list}
 sum_df=pd.DataFrame(sum_dict)
 sum_df.to_excel("beginning of the autophagosome.xlsx")
