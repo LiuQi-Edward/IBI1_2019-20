@@ -1,0 +1,3 @@
+	The practical was not relatively easy for me. At first, i was struggling in the use of function np.random.choice(). I think it was not necessary to use it. I can simply calculate the specific value of each types. Finally, i understand that what i primarily thought is a deterministic model rather than a probabilistic models. 
+	Most importantly, i leart how to debug efficiently correct my programme. Also i have learn some interesting functions like np.where(). Morever, i am more familiar with the matplotlib library. I can draw plot without refering to learning materials. 
+	This practical is interesting and realistic about the current covid-19 situation. I enjoy a lot.
