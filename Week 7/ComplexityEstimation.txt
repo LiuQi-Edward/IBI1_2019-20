@@ -1,0 +1,3 @@
+If we input n numbers, 
+The complexity: 
+O(n) = (n!)^2
