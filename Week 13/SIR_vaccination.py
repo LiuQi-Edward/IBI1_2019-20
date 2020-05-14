@@ -57,5 +57,6 @@ plt.title('SIR model')
 plt.xlabel('time')
 plt.ylabel('number of infected people')
 plt.show()
+plt.savefig("Simulation of the infected (include vaccination) ",type="png")
 
 

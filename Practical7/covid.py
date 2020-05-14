@@ -51,6 +51,7 @@ world_new_cases_boxplot=plt.boxplot(world_new_cases_np,
                                     showfliers=True,
                                     notch=False)
 plt.ylabel('world_new_cases')
+plt.title("New cases around the World")
 plt.show()
 
 #6. both new cases and new deaths worldwide
@@ -66,6 +67,7 @@ plt.xlabel("dates")
 plt.ylabel("world_new_cases")
 plt.xticks(world_dates.iloc[0::4],rotation=-90)
 plt.legend(['world_new_cases','world_new_deaths'])
+plt.title("New cases and new deaths worldwide")
 plt.show()
 
 #7. question:How have new cases and total cases developed over time in Spain?
@@ -80,6 +82,7 @@ plt.ylabel("spain_new_cases")
 plt.xticks(spain_dates.iloc[0::4],rotation=-90)
 #for plt.legend().do not write plt.legend("spain_new_cases").it will not show the complete legend.
 plt.legend(["spain_new_cases"])
+plt.title("Spain new cases developing")
 plt.show()
 #seperately show the two plots, because they are not in the same scale.
 plt.plot(spain_dates,
@@ -89,4 +92,5 @@ plt.xlabel("dates")
 plt.ylabel("spain_total_cases")
 plt.xticks(spain_dates.iloc[0::4],rotation=-90)
 plt.legend(["spain_total_cases"])
+plt.title("Spain total cases developing")
 plt.show()

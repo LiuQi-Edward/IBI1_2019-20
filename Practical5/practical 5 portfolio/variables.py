@@ -24,3 +24,4 @@ Z=(X and (not Y))or(Y and (not X))
 W=X!=Y
 #print Z and W to enable the user verify the consistence of Z and W
 print("\nThe 'Z' value is {}\nThe 'W' value is {}".format(Z,W))
+print("Whether Z=W?",Z==W)
