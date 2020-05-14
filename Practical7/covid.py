@@ -30,6 +30,8 @@ def find_loc(loc):
     return boolean_loc
 #use the boolean-generating finction to find "Afghanistan" cases. Put it in the row argument.
 Afghanistan_total_cases=covid_data.loc[find_loc("Afghanistan"),"total_cases"]
+print("Afghanistan total cases")
+print(Afghanistan_total_cases)
 
 #4. use np to compute the mean and median of new cases for the entire world
 world_new_cases=covid_data.loc[find_loc("World"),"new_cases"]

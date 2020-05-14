@@ -1,3 +1,5 @@
 summary analysis: 
 The SOD2_mouse and SOD2_human gene is very similar, whose bolusum62 score is 1091 and the hamming distance of two sequence is 23. However, difference still exists and concentrates at the beginning part of two genes(ML RA+C+T+R+L+PV +  G).
 The SOD2_human gene has little similarity with the RandomSeq gene with the hamming distance of two sequence is 210 and the bolusum62 score is -250. Meanwhile SOD2_mouse gene has little similarity with the RandomSeq gene with the hamming distance of two sequence is 209 and the bolusum62 score is -250. The bolusum62 score is the same. Although the hamming distance of SOD2_human-RandomSeq pair is 1 larger than the  SOD2_mouse-RandomSeq, the difference is too small to confirm a conclusion that whose relationship is closer. 
+
+The BLAST-like alignment is presented in the programme console. Please read the code. Thanks

@@ -17,7 +17,7 @@ def del_all(l,e):
 #define the percentage of vaccinated ones
 pv=0
 #add pv by 0.1 increments
-while pv<1.1:
+while pv<=1:
     N=10000
     S=9999
     I=1
@@ -49,14 +49,15 @@ while pv<1.1:
         R_track.append(R)
         S_track.append(S)
         I_track.append(I)
-    plt.plot(list(range(1000)),I_track,color=cm.viridis(50+500*pv),marker = ',',linestyle = '-',label = '{:.1f}'.format(pv))
+    plt.plot(list(range(1000)),I_track,color=cm.viridis(int(50+300*pv)),marker = ',',linestyle = '-',label = '{:.1f}'.format(pv))
     plt.legend()
-    pv+=0.1        
+    plt.title('SIR model')
+    plt.xlabel('time')
+    plt.ylabel('number of infected people')
+    pv+=0.1     
 
-plt.title('SIR model')
-plt.xlabel('time')
-plt.ylabel('number of infected people')
-plt.show()
+plt.figure(figsize=(6,4),dpi=150)
+
 plt.savefig("Simulation of the infected (include vaccination) ",type="png")
 
 
